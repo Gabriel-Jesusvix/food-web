@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Food App
 
-## Getting Started
+Food App Web is application for web of the restaurants:
 
-First, run the development server:
+The manly tool is managment of the foods, with products in platform. 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Requirements
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Functional requirements
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- [x] The user must be able to do login with google on the application;
+- [x] The user must place orders;
+- [x] The user must view orders;
+- [x] The user must view favorite restaurants;
+- [x] User can remove restaurants from favorites;
+- [x] The user can view the categories;
+- [x] The user must be able to search for restaurants;
+- [x] The user must be able to exit the application;
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Business rules
 
-## Learn More
+- [x] The User can only place one order at a time
+- [x] The user will only be able to favorite if they are logged in to the application;
+- [x] The participant can only check-in to an event once;
+- [x] The user can redo the same order after the order has been completed (Behavior only done manually at the bank);
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Techs
+ - Typescript
+ - NextJS 
+ - Prisma
+ - NodeJS
+ - Prisma
