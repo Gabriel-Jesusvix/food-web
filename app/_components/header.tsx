@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-import { Button } from "./ui/button";
 import {
   HeartIcon,
   HomeIcon,
@@ -10,8 +8,12 @@ import {
   MenuIcon,
   ScrollTextIcon,
 } from "lucide-react";
-import Link from "next/link";
 import { signIn, signOut, useSession } from "next-auth/react";
+import Image from "next/image";
+import Link from "next/link";
+import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
+import { Button } from "./ui/button";
+import { Separator } from "./ui/separator";
 import {
   Sheet,
   SheetContent,
@@ -19,8 +21,6 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "./ui/sheet";
-import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
-import { Separator } from "./ui/separator";
 
 const Header = () => {
   const { data } = useSession();
@@ -37,7 +37,7 @@ const Header = () => {
             alt="FSW Foods"
             sizes="100%"
             fill
-            className="object-cover"
+            className="object-contain"
           />
         </div>
       </Link>
@@ -100,9 +100,14 @@ const Header = () => {
             <Button
               variant="ghost"
               className="w-full justify-start space-x-3 rounded-full text-sm font-normal"
+              asChild
             >
-              <HomeIcon size={16} />
-              <span className="block">Início</span>
+              <Link
+                href="/"
+              >
+                <HomeIcon size={16} />
+                <span className="block">Início</span>
+              </Link>
             </Button>
 
             {data?.user && (
