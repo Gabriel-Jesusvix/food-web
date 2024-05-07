@@ -33,3 +33,11 @@ The manly tool is managment of the foods, with products in platform.
  - Prisma
 
 ### ScreenShot / Movie
+
+
+https://github.com/Gabriel-Jesusvix/food-web/assets/62946928/b7226c21-897e-4439-b834-0e72e8e4f256
+
+
+## Deploy
+
+https://food-gabriel-jesus-gj.vercel.app/
